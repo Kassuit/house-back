@@ -1,0 +1,36 @@
+{
+  "followers": [
+    {
+      "follower": "House",
+      "following": "Wilson"
+    },
+    {
+      "follower": "Wilson",
+      "following": "House"
+    },
+    {
+      "follower": "House",
+      "following": "Cuddy"
+    },
+    {
+      "follower": "Cuddy",
+      "following": "House"
+    },
+    {
+      "follower": "Foreman",
+      "following": "Chase"
+    },
+    {
+      "follower": "Chase",
+      "following": "Cameron"
+    },
+    {
+      "follower": "Wilson",
+      "following": "Cuddy"
+    },
+    {
+      "follower": "Cameron",
+      "following": "House"
+    }
+  ]
+}
