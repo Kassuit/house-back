@@ -2,35 +2,35 @@
   "followers": [
     {
       "follower": "House",
-      "following": "Wilson"
+      "followee": "Wilson"
     },
     {
       "follower": "Wilson",
-      "following": "House"
+      "followee": "House"
     },
     {
       "follower": "House",
-      "following": "Cuddy"
+      "followee": "Cuddy"
     },
     {
       "follower": "Cuddy",
-      "following": "House"
+      "followee": "House"
     },
     {
       "follower": "Foreman",
-      "following": "Chase"
+      "followee": "Chase"
     },
     {
       "follower": "Chase",
-      "following": "Cameron"
+      "followee": "Cameron"
     },
     {
       "follower": "Wilson",
-      "following": "Cuddy"
+      "followee": "Cuddy"
     },
     {
       "follower": "Cameron",
-      "following": "House"
+      "followee": "House"
     }
   ]
 }
