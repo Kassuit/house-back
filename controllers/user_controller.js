@@ -13,15 +13,26 @@ async function get_by_id(ctx) {
 }
 
 async function edit(ctx) {
-    return
+    const { id } = ctx.params;
+    const { user } = ctx.request.body;
+    const user_record = await User.findByPk(id);
+    if (!user_record) return helpers.error404();
+    await user_record.update(user)
+    ctx.body = user_record;
 }
 
 async function create(ctx) {
-    return
+    const { user } = ctx.request.body;
+    const user_record = await User.create(user);
+    ctx.body = user_record;
 }
 
 async function destroy(ctx) {
-    return
+    const { id } = ctx.params;
+    const user_record = await User.findByPk(id);
+    if (!user_record) return helpers.error404();
+    await user_record.destroy();
+    ctx.status = 204;
 }
 
 module.exports = { index, get_by_id, edit, create, destroy }
