@@ -1,30 +1,134 @@
 {
-  "names": [
-    "House",
-    "Foreman",
-    "Chase",
-    "Wilson",
-    "Cameron",
-    "Cuddy",
-    "Taub",
-    "Thirteen",
-    "Kutner",
-    "Adams",
-    "Masters",
-    "Park",
-    "Amber",
-    "Stacy",
-    "Lucas",
-    "Rowan Chase",
-    "Nolan",
-    "Rachel",
-    "Alvie",
-    "Sam",
-    "Nurse",
-    "Nick",
-    "Vogler",
-    "Tritter",
-    "Arlene",
-    "Gabe"
+  "characters": [
+    {
+      "name": "House",
+      "bio": "Dr. Gregory House, a brilliant diagnostician with a sharp wit and unconventional methods.",
+      "image": "House.webp"
+    },
+    {
+      "name": "Foreman",
+      "bio": "Dr. Eric Foreman, a neurologist and member of House's diagnostic team.",
+      "image": "Foreman.webp"
+    },
+    {
+      "name": "Chase",
+      "bio": "Dr. Robert Chase, an intensivist and surgeon on House's team.",
+      "image": "Chase.webp"
+    },
+    {
+      "name": "Wilson",
+      "bio": "Dr. James Wilson, an oncologist and House's best friend.",
+      "image": "Wilson.webp"
+    },
+    {
+      "name": "Cameron",
+      "bio": "Dr. Allison Cameron, an immunologist and member of House's team.",
+      "image": "Cameron.webp"
+    },
+    {
+      "name": "Cuddy",
+      "bio": "Dr. Lisa Cuddy, the Dean of Medicine and hospital administrator.",
+      "image": "Cuddy.webp"
+    },
+    {
+      "name": "Taub",
+      "bio": "Dr. Chris Taub, a plastic surgeon and member of House's team.",
+      "image": "Taub.webp"
+    },
+    {
+      "name": "Thirteen",
+      "bio": "Dr. Remy 'Thirteen' Hadley, a diagnostician with a mysterious past.",
+      "image": "Thirteen.webp"
+    },
+    {
+      "name": "Kutner",
+      "bio": "Dr. Lawrence Kutner, a sports medicine specialist on House's team.",
+      "image": "Kutner.webp"
+    },
+    {
+      "name": "Adams",
+      "bio": "Dr. Jessica Adams, a prison doctor who joins House's team.",
+      "image": "Adams.webp"
+    },
+    {
+      "name": "Masters",
+      "bio": "Dr. Martha Masters, a medical student with a strong moral compass.",
+      "image": "Masters.webp"
+    },
+    {
+      "name": "Park",
+      "bio": "Dr. Chi Park, a neurologist with a blunt personality.",
+      "image": "Park.webp"
+    },
+    {
+      "name": "Amber",
+      "bio": "Dr. Amber Volakis, a competitive doctor who briefly joins House's team.",
+      "image": "Amber.webp"
+    },
+    {
+      "name": "Stacy",
+      "bio": "Stacy Warner, House's ex-girlfriend and hospital lawyer.",
+      "image": "Stacy.webp"
+    },
+    {
+      "name": "Lucas",
+      "bio": "Lucas Douglas, a private investigator hired by House.",
+      "image": "Lucas.webp"
+    },
+    {
+      "name": "Rowan Chase",
+      "bio": "Dr. Rowan Chase, Robert Chase's estranged father.",
+      "image": "Rowan Chase.webp"
+    },
+    {
+      "name": "Nolan",
+      "bio": "Dr. Darryl Nolan, House's psychiatrist.",
+      "image": "Nolan.webp"
+    },
+    {
+      "name": "Rachel",
+      "bio": "Rachel Cuddy, Lisa Cuddy's adopted daughter.",
+      "image": "Rachel.webp"
+    },
+    {
+      "name": "Alvie",
+      "bio": "Alvie, House's roommate in the psychiatric hospital.",
+      "image": "Alvie.webp"
+    },
+    {
+      "name": "Sam",
+      "bio": "Dr. Sam Carr, Wilson's ex-wife.",
+      "image": "Sam.webp"
+    },
+    {
+      "name": "Nurse",
+      "bio": "A nurse working at Princeton-Plainsboro Teaching Hospital.",
+      "image": "Nurse.webp"
+    },
+    {
+      "name": "Nick",
+      "bio": "Nick, a patient with a mysterious illness.",
+      "image": "Nick.webp"
+    },
+    {
+      "name": "Vogler",
+      "bio": "Edward Vogler, a billionaire who becomes chairman of the board.",
+      "image": "Vogler.webp"
+    },
+    {
+      "name": "Tritter",
+      "bio": "Detective Michael Tritter, a police officer who investigates House.",
+      "image": "Tritter.webp"
+    },
+    {
+      "name": "Arlene",
+      "bio": "Arlene Cuddy, Lisa Cuddy's mother.",
+      "image": "Arlene.webp"
+    },
+    {
+      "name": "Gabe",
+      "bio": "Gabe, a patient with a complex medical case.",
+      "image": "Gabe.webp"
+    }
   ]
 }
