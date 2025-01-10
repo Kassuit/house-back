@@ -35,4 +35,15 @@ async function destroy(ctx) {
     ctx.status = 204;
 }
 
-module.exports = { index, get_by_id, edit, create, destroy }
+// Specific Behavior
+// If query requires details as in /post/:id/likers/?detail=true, renders the like_detailed query
+async function likers(ctx) {
+    const { id } = ctx.params;
+    const { detail } = ctx.query;
+    const includeDetail = detail === 'true' ? 'like_detailed' : 'like';
+    const user_records = await Post.findByPk(id, { include: [includeDetail] })
+    if (!user_records) return helpers.error404();
+    ctx.body = user_records;
+}
+
+module.exports = { index, get_by_id, edit, create, destroy, likers }
