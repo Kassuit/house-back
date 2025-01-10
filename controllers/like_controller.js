@@ -35,23 +35,4 @@ async function destroy(ctx) {
     ctx.status = 204;
 }
 
-// specific controllers
-async function users_liked_posts(ctx) {
-    const { user_id } = ctx.params;
-    const liked_posts = await Like.findAll({
-        where: { "user_id": user_id },
-        include: ['post']
-    });
-    ctx.body = liked_posts;
-}
-
-async function posts_liker_users(ctx) {
-    const { post_id } = ctx.params;
-    const liker_users = await Like.findAll({
-        where: { "post_id": post_id },
-        include: ['user']
-    });
-    ctx.body = liker_users;
-}
-
-module.exports = { index, get_by_id, edit, create, destroy, users_liked_posts, posts_liker_users };
+module.exports = { index, get_by_id, edit, create, destroy };
