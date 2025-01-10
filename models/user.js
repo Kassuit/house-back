@@ -20,13 +20,31 @@ module.exports = (sequelize, DataTypes) => {
         as: "post"
       });
       User.hasMany(models.Follower, {
-        foreignKey: "follower_id",
+        foreignKey: "followee_id",
         as: "follower"
       });
       User.hasMany(models.Follower, {
-        foreignKey: "followee_id",
+        foreignKey: "follower_id",
         as: "followee"
       });
+      User.belongsToMany(models.User, {
+        through: models.Follower,
+        foreignKey: "followee_id",
+        otherKey: 'follower_id',
+        as: "follower_detail"
+      });
+      User.belongsToMany(models.User, {
+        through: models.Follower,
+        foreignKey: "follower_id",
+        otherKey: 'followee_id',
+        as: "followee_detail"
+      });
+      User.belongsToMany(models.Post, {
+        through: models.Like,
+        foreignKey: "user_id",
+        otherKey: "post_id",
+        as: "post_detail"
+      })
     }
   }
   User.init({

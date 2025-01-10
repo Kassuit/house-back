@@ -35,4 +35,32 @@ async function destroy(ctx) {
     ctx.status = 204;
 }
 
-module.exports = { index, get_by_id, edit, create, destroy }
+// Specific Behavior
+async function liked_posts(ctx) {
+    const { id } = ctx.params;
+    const { detail } = ctx.query;
+    const detailedName = detail === 'true' ? 'post_detail' : 'post'
+    const posts_record = await User.findByPk(id, { include: [detailedName] })
+    if (!posts_record) return helpers.error404();
+    ctx.body = posts_record;
+}
+
+async function follower(ctx) {
+    const { id } = ctx.params;
+    const { detail } = ctx.query;
+    const detailedName = detail === 'true' ? 'follower' : 'follower_detail'
+    const follower_record = await User.findByPk(id, { include: [detailedName] })
+    if (!follower_record) return helpers.error404();
+    ctx.body = follower_record;
+}
+
+async function followee(ctx) {
+    const { id } = ctx.params;
+    const { detail } = ctx.query;
+    const detailedName = detail === 'true' ? 'followee' : 'followee_detail'
+    const followee_record = await User.findByPk(id, { include: [detailedName] })
+    if (!followee_record) return helpers.error404();
+    ctx.body = followee_record;
+}
+
+module.exports = { index, get_by_id, edit, create, destroy, liked_posts, follower, followee }
