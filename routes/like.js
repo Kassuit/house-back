@@ -5,7 +5,7 @@ const router = new Router();
 
 router.get("/like", like_controller.index);
 router.get("/like/:id", like_controller.get_by_id);
-router.post("/like/:id", like_controller.create);
+router.post("/like", like_controller.create);
 router.put("/like/:id", like_controller.edit);
 router.delete("/like/:id", like_controller.destroy);
 

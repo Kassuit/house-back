@@ -5,7 +5,7 @@ const router = new Router();
 
 router.get("/post", post_controller.index);
 router.get("/post/:id", post_controller.get_by_id);
-router.post("/post/:id", post_controller.create);
+router.post("/post", post_controller.create);
 router.put("/post/:id", post_controller.edit);
 router.delete("/post/:id", post_controller.destroy);
 
