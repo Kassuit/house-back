@@ -11,5 +11,6 @@ router.delete("/post/:id", post_controller.destroy);
 
 // Specific routes
 router.get("/post/:id/likers", post_controller.likers);
+router.get("/post/:id/user", post_controller.get_by_id_with_user);
 
 module.exports = router;

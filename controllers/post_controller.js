@@ -46,4 +46,11 @@ async function likers(ctx) {
     ctx.body = user_records;
 }
 
-module.exports = { index, get_by_id, edit, create, destroy, likers }
+async function get_by_id_with_user(ctx) {
+    const { id } = ctx.params;
+    const post = await Post.findByPk(id, { include: ['user'] });
+    if (!post) return helpers.error404();
+    ctx.body = post;
+}
+
+module.exports = { index, get_by_id, edit, create, destroy, likers, get_by_id_with_user }
