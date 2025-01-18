@@ -5,8 +5,10 @@ const mount = require('koa-mount');
 const routes = require("./routes/routes.js");
 const path = require('path');
 const mime = require("./middlewares/mime.js");
+const bodyParser = require("koa-bodyparser");
 
 const app = new koa();
+app.use(bodyParser())
 app.use(cors());
 app.use(mime);
 app.use(mount('/images', serve(path.join(__dirname, '/images'))))
